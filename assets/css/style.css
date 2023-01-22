@@ -186,7 +186,7 @@ main{
 .donar-cabecera h1,
 .detalle-cabecera  h1{
     color: #fff;
-    background: #48C9B0;
+    background: #17574a;
 }
 
 .detalle-cabecera  h2, .detalle-cabecera span{
@@ -267,7 +267,7 @@ footer.container-fluid{
     margin: 0 auto;
 }
 .creditos a{
-    color: #48C9B0 ;
+    color: #17574a ;
 }
 .creditos a:hover{
     color: #007bff ;
