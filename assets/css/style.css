@@ -280,6 +280,10 @@ footer.container-fluid{
     padding-top: 0px;
     background: transparent;
 }
+
+.texto-oculto{
+    display: none;
+}
 /* RESPONSIVE */
 @media (max-width: 980px) {
     .fila div.dos-columnas,
