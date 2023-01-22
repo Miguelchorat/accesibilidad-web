@@ -18,10 +18,11 @@
             </div>
         </div>
         <a href="index.html">
-            <img src="assets/img/logo.png"/>
+            <img src="assets/img/logo.png" alt="Imagen de logo de la web"/>
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                <span class="texto-oculto">Menu desplegable</span>
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse">
@@ -55,7 +56,7 @@
                         <p class="mb-0">
                             La protección y promoción de la diversidad cultural y natural es uno de los grandes desafíos del siglo XXI.
                             A este respecto, los museos y colecciones son medios primordiales para salvaguardar los testimonios materiales e
-                            inmateriales de la naturaleza y las culturas humanas. 
+                            inmateriales de la naturaleza y las culturas humanas.
                         </p>
                         <footer class="blockquote-footer"> <cite>UNESCO, 17 de noviembre de 2015</cite></footer>
                     </blockquote>
@@ -73,18 +74,20 @@
                     <form>
                         <h3>Cantidad del donativo (EUR)</h3>
 
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="unaVez" id="unaVez" value="option1" checked>
-                            <label class="form-check-label" for="unaVez">
-                                Una única vez
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="mensual" id="mensual" value="option2">
-                            <label class="form-check-label" for="mensual">
-                                Mensual
-                            </label>
-                        </div>
+                        <fieldset>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="unaVez" id="unaVez" value="option1" checked>
+                                <label class="form-check-label" for="unaVez">
+                                    Una única vez
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="mensual" id="mensual" value="option2">
+                                <label class="form-check-label" for="mensual">
+                                    Mensual
+                                </label>
+                            </div>
+                        </fieldset>
                         <div class="form-group">
                             <label for="exampleFormControlSelect2">Importe</label>
                             <select multiple class="form-control" id="exampleFormControlSelect2">
@@ -98,57 +101,46 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Otra cantidad</label>
-                            <input type="password" class="form-control" placeholder="Escriba otro importe">
+                            <label for="importe"><input id="importe" name="importe" type="password" class="form-control" placeholder="Escriba otro importe">Otra cantidad</label>                            
                         </div>
                         <hr>
                         <h3>Datos de facturación</h3>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Escribe tu email">
+                            <label for="correo">Email <input id="correo" name="correo" type="email" class="form-control" placeholder="Escribe tu email"></label>                            
                             <small class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie.</small>
                         </div>
                         <div class="form-group">
-                            <label>Nombre </label>
-                            <input type="text" class="form-control" placeholder="Escribe tu nombre ">
+                            <label for="nombre">Nombre <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Escribe tu nombre "></label>                            
                         </div>
                         <div class="form-group">
-                            <label>Apellidos </label>
-                            <input type="text" class="form-control" placeholder="Tu apellidos">
+                            <label for="apellidos">Apellidos <input id="apellidos" name="apellidos" type="text" class="form-control" placeholder="Tu apellidos"></label>                            
                         </div>
 
                         <div class="form-group">
-                            <label>Dirección postal </label>
-                            <input type="text" class="form-control" placeholder="Tu dirección postal">
+                            <label for="postal">Dirección postal <input id="postal" name="postal" type="text" class="form-control" placeholder="Tu dirección postal"></label>                            
                             <small class="form-text text-muted">Nunca compartiremos su dirección con nadie.</small>
                         </div>
 
                         <div class="form-group">
-                            <label>Teléfono </label>
-                            <input type="tel" class="form-control" placeholder="Teléfono">
+                            <label for="telefono">Teléfono <input id="telefono" name="telefono" type="tel" class="form-control" placeholder="Teléfono"></label>                            
                             <small class="form-text text-muted">Nunca compartiremos su teléfono con nadie más.</small>
                         </div>
                         <hr>
                         <h3>Datos de pago</h3>
                         <div class="form-group">
-                            <label>Número tarjeta</label>
-                            <input type="number" class="form-control" placeholder="Número de tarjeta">
+                            <label for="tarjeta_bancaria">Número tarjeta <input id="tarjeta_bancaria" name="tarjeta_bancaria" type="number" class="form-control" placeholder="Número de tarjeta"></label>                            
                         </div>
                         <div class="form-group">
-                            <label>Data de expiración</label>
-                            <input type="text" class="form-control" placeholder="MM/AA">
+                            <label for="fecha_expiración">Data de expiración <input id="fecha_expiración" name="fecha_expiración" type="text" class="form-control" placeholder="MM/AA"></label>                            
                         </div>
                         <div class="form-group">
-                            <label>Código de verificación</label>
-                            <input type="number" class="form-control" placeholder="CCV">
+                            <label for="CCV">Código de verificación <input id="CCV" name="CCV" type="number" class="form-control" placeholder="CCV"></label>                            
                         </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <label class="custom-control-label">Hago este donativo de manera anónima</label>
+                        <div class="custom-control custom-checkbox">                            
+                            <label for="anonima" class="custom-control-label"><input id="anonima" name="anonima" type="checkbox" class="custom-control-input">Hago este donativo de manera anónima</label>
                         </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <label class="custom-control-label">Acepto expresamente la <a href="#">política de protección de datos </a></label>
+                        <div class="custom-control custom-checkbox">                            
+                            <label for="privacidad" class="custom-control-label"><input id="privacidad" name="privacidad" type="checkbox" class="custom-control-input"> Acepto expresamente la <a href="#">política de protección de datos</a></label>
                         </div>
                         <button type="submit" class="btn btn-secondary">Enviar</button>
                     </form>
@@ -162,29 +154,28 @@
         <div class="container pie">
             <h4>La Galería Ecléctica</h4>
             <a href="#">
-                Plaza del Poblenou, 1 <br>
+                Plaza del Poblenou, 1<br>
                 08018 Barcelona
             </a>
             <div class="rrss">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://www.facebook.com/"><span class="texto-oculto">Página de facebook</span><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.twitter.com/"><span class="texto-oculto">Página de twitter</span><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/"><span class="texto-oculto">Página de instagram</span><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><span class="texto-oculto">Página de youtube</span><i class="fab fa-youtube-square"></i></a>
             </div>
 
             <form>
                 <h4>Suscríbete a nuestra Newsletter</h4>
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Enter email">
+                    <label for="correo" class="form-check-label">Correo<input  id="correo" name="correo" title="correo" type="email" class="form-control" placeholder="Enter email"/></label>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input">
-                    <label class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
+                <div class="form-group form-check">                
+                    <label for="privacidad" class="form-check-label"><input id="privacidad" name="privacidad" type="checkbox" title="Aceptar politica de privacidad" class="form-check-input"/>Acepto la <a href="#">Política de privacidad </a></label>
                 </div>
                 <button type="submit" class="btn btn-secondary">Registrarme</button>
             </form>
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.png"/>
+                <img src="assets/img/logo.png" alt="Imagen de logo de la web"/>
             </a>
             <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
                 <div class="navbar-nav">
