@@ -21,7 +21,7 @@
         <img src="assets/img/logo.png"/>
     </a>
     <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" value="">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -36,6 +36,7 @@
 </header>
 
 <main class="container-fluid">
+    <h1>Inicio</h1>
     <section class="exposiciones container">
         <h2> Exposiciones actuales</h2>
         <div class="fila">
@@ -128,11 +129,11 @@
         <form>
             <h4>Suscríbete a nuestra Newsletter</h4>
             <div class="form-group">
-                <input title="correo" type="email" class="form-control" placeholder="Enter email">
+                <input title="correo" aria-label="correo" type="email" class="form-control" placeholder="Enter email">
             </div>
             <div class="form-group form-check">
                 <input for="politica" type="checkbox" class="form-check-input">
-                <label id="politica" class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
+                <label id="politica" name="politica" class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
             </div>
             <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
